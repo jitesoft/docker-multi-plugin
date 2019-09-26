@@ -29,6 +29,15 @@ docker multi push myimage:latest myimage:1.0.1.1.0 myimage:latest myimage:1.0.1.
 
 Awesome right?!
 
+## Installation
+
+Either build the code yourself or download one of the binaries from the `releases` tab on github.  
+Rename the plugin file to `docker-multi` and place it in the `~/.docker/cli-plugins` directory (or `%HOMEPATH%\.docker\cli-plugins` on windows).
+
+Run docker `docker multi --help`.
+
+Done!
+
 ## License
 
 MIT

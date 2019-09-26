@@ -15,7 +15,7 @@ require (
 	github.com/containerd/typeurl v0.0.0-20190911142611-5eb25027c9fd // indirect
 	github.com/docker/cli v0.0.0-20190822175708-578ab52ece34
 	github.com/docker/distribution v2.7.1-0.20190205005809-0d3efadf0154+incompatible // indirect
-	github.com/docker/docker v1.4.2-0.20190511020111-3998dffb806f // indirect
+	github.com/docker/docker v1.4.2-0.20190511020111-3998dffb806f
 	github.com/docker/docker-credential-helpers v0.6.3 // indirect
 	github.com/docker/go v1.5.1-1 // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
