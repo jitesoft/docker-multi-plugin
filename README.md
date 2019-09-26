@@ -34,6 +34,14 @@ Awesome right?!
 Either build the code yourself or download one of the binaries from the `releases` tab on github.  
 Rename the plugin file to `docker-multi` and place it in the `~/.docker/cli-plugins` directory (or `%HOMEPATH%\.docker\cli-plugins` on windows).
 
+```bash
+PLUGINS=$HOME/.docker/cli-plugins
+mkdir -p $PLUGINS
+
+curl -L "https://github.com/jitesoft/docker-multi-plugin/releases/download/v0.0.1/docker-multi-plugin-$(uname -s)-amd64" -o $PLUGINS/docker-multi
+chmod +x $PLUGINS/docker-multi
+```
+
 Run docker `docker multi --help`.
 
 Done!
