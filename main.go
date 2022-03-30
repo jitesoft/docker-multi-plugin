@@ -12,12 +12,14 @@ import (
 	"context"
 )
 
+var VERSION = "unknown"
+
 func main() {
 	plugin.Run(func(dockerCli command.Cli) *cobra.Command {
 		tag := &cobra.Command{
-			Use: "tag",
-			Args: cobra.MinimumNArgs(2),
-			Short: "Tag a source image with multiple extra tags.",
+			Use:     "tag",
+			Args:    cobra.MinimumNArgs(2),
+			Short:   "Tag a source image with multiple extra tags.",
 			Example: "docker multi tag origin:tag target:tag target2:tag2 target3:tag",
 			Run: func(cmd *cobra.Command, args []string) {
 				origin := args[0]
@@ -35,9 +37,9 @@ func main() {
 		}
 
 		push := &cobra.Command{
-			Use: "push",
-			Args: cobra.MinimumNArgs(2),
-			Short: "Push multiple images in one command.",
+			Use:     "push",
+			Args:    cobra.MinimumNArgs(2),
+			Short:   "Push multiple images in one command.",
 			Example: "docker multi push image:tag image:tag2 image:tag3",
 			Run: func(cmd *cobra.Command, args []string) {
 				for i := 1; i < len(args); i++ {
@@ -53,7 +55,7 @@ func main() {
 		}
 
 		cmd := &cobra.Command{
-			Use: "multi",
+			Use:   "multi",
 			Short: "Batch-run commands.",
 			RunE: func(cmd *cobra.Command, args []string) error {
 				return nil
@@ -62,10 +64,10 @@ func main() {
 
 		cmd.AddCommand(tag, push)
 		return cmd
-	}, manager.Metadata {
+	}, manager.Metadata{
 		ShortDescription: "Docker CLI Plugin to allow for batch commands.",
-		SchemaVersion: "0.1.0",
-		Vendor: "Jitesoft",
-		Version: "0.0.1",
+		SchemaVersion:    "0.1.0",
+		Vendor:           "Jitesoft",
+		Version:          VERSION,
 	})
 }
