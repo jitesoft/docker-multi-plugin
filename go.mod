@@ -10,19 +10,14 @@ require (
 )
 
 require (
-	github.com/Microsoft/hcsshim v0.8.7 // indirect
-	github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d // indirect
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 // indirect
 	github.com/bugsnag/bugsnag-go v2.1.2+incompatible // indirect
 	github.com/bugsnag/panicwrap v1.3.4 // indirect
 	github.com/cloudflare/cfssl v1.6.1 // indirect
-	github.com/containerd/containerd v1.3.0-rc.2 // indirect
-	github.com/containerd/continuity v0.0.0-20190827140505-75bee3e2ccb6 // indirect
-	github.com/docker/distribution v2.7.1-0.20190205005809-0d3efadf0154+incompatible // indirect
+	github.com/containerd/containerd v1.5.18 // indirect
 	github.com/docker/docker-credential-helpers v0.6.3 // indirect
 	github.com/docker/go v1.5.1-1 // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
-	github.com/docker/go-metrics v0.0.1 // indirect
 	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7 // indirect
 	github.com/fvbommel/sortorder v1.0.2 // indirect
 	github.com/gofrs/uuid v4.2.0+incompatible // indirect
@@ -32,8 +27,6 @@ require (
 	github.com/moby/sys/mount v0.3.1 // indirect
 	github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6 // indirect
 	github.com/morikuni/aec v0.0.0-20170113033406-39771216ff4c // indirect
-	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
-	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/spf13/viper v1.10.1 // indirect
 	github.com/theupdateframework/notary v0.6.1 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
