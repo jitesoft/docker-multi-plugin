@@ -32,7 +32,7 @@ require (
 	github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6 // indirect
 	github.com/morikuni/aec v0.0.0-20170113033406-39771216ff4c // indirect
 	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
-	github.com/opencontainers/image-spec v1.0.1 // indirect
+	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/spf13/viper v1.10.1 // indirect
 	github.com/theupdateframework/notary v0.6.1 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
