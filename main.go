@@ -12,7 +12,7 @@ import (
 	"context"
 )
 
-var VERSION = "unknown"
+var MultiVersion string
 
 func main() {
 	plugin.Run(func(dockerCli command.Cli) *cobra.Command {
@@ -68,6 +68,6 @@ func main() {
 		ShortDescription: "Docker CLI Plugin to allow for batch commands.",
 		SchemaVersion:    "0.1.0",
 		Vendor:           "Jitesoft",
-		Version:          VERSION,
+		Version:          MultiVersion,
 	})
 }
