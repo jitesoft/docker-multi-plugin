@@ -35,10 +35,12 @@ Either build the code yourself or download one of the binaries from the `release
 Rename the plugin file to `docker-multi` and place it in the `~/.docker/cli-plugins` directory (or `%HOMEPATH%\.docker\cli-plugins` on windows).
 
 ```bash
+MULTI_VERSION=v0.0.3   # Change to version you want to download.
+MULTI_ARCH=amd64-linux # Change to your arch and os
 PLUGINS=$HOME/.docker/cli-plugins
 mkdir -p $PLUGINS
 
-curl -L "https://github.com/jitesoft/docker-multi-plugin/releases/download/v0.0.1/docker-multi-plugin-$(uname -s)-amd64" -o $PLUGINS/docker-multi
+curl -L "https://github.com/jitesoft/docker-multi-plugin/releases/download/${MULTI_VERSION}/docker-multi-plugin-${MULTI_ARCH}.tar.gz" | tar zx -C $PLUGINS/
 chmod +x $PLUGINS/docker-multi
 ```
 
