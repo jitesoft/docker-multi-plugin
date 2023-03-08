@@ -30,7 +30,7 @@ func main() {
 					if err != nil {
 						log.Error("Failed to assign " + origin + " with the tag " + target)
 					} else {
-						log.Info(origin + " ==> " + target)
+						log.Info("Tag " + target + " created from " + origin)
 					}
 				}
 			},
@@ -48,7 +48,7 @@ func main() {
 					if err != nil {
 						log.Error("Failed to push image " + target)
 					} else {
-						log.Info("Pushed image " + target + " successfully!")
+						log.Info("Pushed image with tag " + target + " successfully")
 					}
 				}
 			},
