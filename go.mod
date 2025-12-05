@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/docker/cli v23.0.1+incompatible
 	github.com/docker/docker v23.0.1+incompatible
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.1
 	github.com/spf13/cobra v1.6.1
 )
 
